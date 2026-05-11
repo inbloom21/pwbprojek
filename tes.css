@@ -1,0 +1,65 @@
+body {
+    background-color: #121212;
+    font-family: arial, sans-serif;
+}
+
+.custom-header {
+    background-color: #000000;
+    padding: 15px 0;
+}
+
+.custom-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.logo-top {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.text-malaka {
+    color: #ffffff;
+}
+
+.text-musik {
+    color: #d62828;
+    margin-left: 2px;
+}
+
+.logo-bottom {
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.custom-nav-links {
+    gap: 15px;
+}
+
+.custom-nav-links .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.custom-nav-links .nav-link {
+    color: #e0e0e0 !important;
+    font-size: 15px;
+    padding: 5px 0 !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.custom-nav-links .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.custom-nav-links .nav-link.active {
+    color: #d62828 !important;
+    border-bottom: 2px solid #d62828;
+}
