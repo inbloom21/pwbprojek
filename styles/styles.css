@@ -359,6 +359,189 @@ position:relative;
     color:white;
 }
 
+/* Produk Section */
+.produk-section{
+    padding:100px 0;
+    position:relative;
+    animation:fadeUp 1s ease;
+}
+
+.produk-section::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:rgba(214,40,40,0.12);
+    filter:blur(120px);
+    top:80px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:0;
+}
+
+.produk-section .container{
+    position:relative;
+    z-index:1;
+}
+
+.produk-subtitle{
+    max-width:760px;
+    margin:0 auto;
+    line-height:30px;
+}
+
+.produk-highlight{
+    background:linear-gradient(135deg,#181818,#101010);
+    border:1px solid rgba(214,40,40,0.25);
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    margin:55px 0 45px;
+    padding:35px;
+    box-shadow:0 0 25px rgba(214,40,40,0.12);
+}
+
+.produk-label{
+    color:#d62828;
+    display:inline-block;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:14px;
+    text-transform:uppercase;
+}
+
+.highlight-text h2{
+    color:white;
+    font-size:34px;
+    margin-bottom:16px;
+}
+
+.highlight-text p{
+    color:#cfcfcf;
+    font-size:17px;
+    line-height:30px;
+    margin:0;
+    max-width:650px;
+}
+
+.highlight-info{
+    min-width:230px;
+    text-align:right;
+}
+
+.highlight-info p{
+    color:#bdbdbd;
+    margin-bottom:8px;
+}
+
+.highlight-info h3{
+    color:white;
+    font-size:30px;
+    margin-bottom:22px;
+}
+
+.produk-btn{
+    display:inline-block;
+    text-decoration:none;
+}
+
+.produk-grid{
+    margin-top:20px;
+}
+
+.produk-card{
+    background:#1b1b1b;
+    border:1px solid #2b2b2b;
+    border-radius:12px;
+    height:100%;
+    overflow:hidden;
+    transition:0.4s ease;
+}
+
+.produk-card:hover{
+    transform:translateY(-10px);
+    border-color:#d62828;
+    box-shadow:0 0 20px rgba(214,40,40,0.3);
+}
+
+.produk-img{
+    width:100%;
+    height:235px;
+    object-fit:cover;
+    display:block;
+}
+
+.produk-content{
+    padding:26px;
+}
+
+.produk-content h3{
+    color:white;
+    font-size:25px;
+    margin-bottom:14px;
+}
+
+.produk-content p{
+    color:#cfcfcf;
+    font-size:16px;
+    line-height:28px;
+    margin-bottom:18px;
+}
+
+.produk-content ul{
+    color:#d9d9d9;
+    margin:0 0 22px;
+    padding-left:20px;
+}
+
+.produk-content li{
+    margin-bottom:8px;
+}
+
+.produk-price{
+    color:#d62828;
+    font-size:22px;
+    font-weight:bold;
+}
+
+@media (max-width: 768px){
+    .section-title{
+        font-size:36px;
+        letter-spacing:2px;
+    }
+
+    .produk-highlight{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:28px;
+    }
+
+    .highlight-info{
+        text-align:left;
+        min-width:0;
+    }
+
+    .custom-logo img{
+        margin-left:0 !important;
+    }
+
+    .custom-nav-links{
+        padding:15px 0;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .footer-right{
+        text-align:left;
+    }
+}
+
 /* Footer */
 
 .footer{
