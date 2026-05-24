@@ -507,29 +507,345 @@ position:relative;
     font-weight:bold;
 }
 
-@media (max-width: 768px){
-    .section-title{
-        font-size:36px;
-        letter-spacing:2px;
+/* ===== RESPONSIVE ===== */
+
+/* Navbar toggler styling */
+.navbar-toggler {
+    border-color: rgba(214,40,40,0.5);
+    padding: 6px 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28214, 40, 40, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(214,40,40,0.25);
+}
+
+/* Logo responsive */
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet — max 992px */
+@media (max-width: 992px) {
+    .custom-nav-links {
+        padding: 15px 0;
+        gap: 5px;
     }
 
-    .produk-highlight{
-        flex-direction:column;
-        align-items:flex-start;
-        padding:28px;
+    .custom-nav-links .nav-link {
+        margin: 0;
+        padding: 10px 15px;
     }
 
-    .highlight-info{
-        text-align:left;
-        min-width:0;
+    .section-title {
+        font-size: 40px;
+        letter-spacing: 3px;
     }
 
-    .custom-logo img{
-        margin-left:0 !important;
+    .main-section,
+    .produk-section,
+    .testimoni-section,
+    .about-section,
+    .kontak-section {
+        padding: 70px 0;
     }
 
-    .custom-nav-links{
-        padding:15px 0;
+    .produk-highlight {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px;
+        gap: 25px;
+    }
+
+    .highlight-info {
+        text-align: left;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .highlight-text h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .gallery-title {
+        font-size: 36px;
+    }
+
+    .gallery-img {
+        width: 280px;
+        height: 200px;
+    }
+
+    .slide-track {
+        width: calc(280px * 12);
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .stats h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile — max 768px */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .main-section,
+    .produk-section,
+    .testimoni-section,
+    .about-section,
+    .kontak-section {
+        padding: 50px 0;
+    }
+
+    .navbar-brand img {
+        width: 140px;
+        height: auto;
+    }
+
+    .custom-logo img {
+        margin-left: 0 !important;
+    }
+
+    .produk-highlight {
+        padding: 22px;
+    }
+
+    .highlight-text h2 {
+        font-size: 24px;
+    }
+
+    .highlight-info h3 {
+        font-size: 24px;
+    }
+
+    .produk-content h3 {
+        font-size: 22px;
+    }
+
+    .produk-img {
+        height: 200px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        padding: 40px 0;
+    }
+
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .gallery-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-img {
+        width: 240px;
+        height: 170px;
+    }
+
+    .slide-track {
+        width: calc(240px * 12);
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 10px;
+    }
+
+    .stats h2 {
+        font-size: 28px;
+    }
+
+    .stats p {
+        font-size: 14px;
+    }
+
+    .service-title {
+        font-size: 24px;
+    }
+
+    .service-text {
+        font-size: 15px;
+    }
+
+    .custom-btn {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .kontak-info h3,
+    .kontak-form h3 {
+        font-size: 22px;
+    }
+
+    .divider {
+        margin: 40px auto;
+    }
+}
+
+/* Small mobile — max 480px */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .main-section,
+    .produk-section,
+    .testimoni-section,
+    .about-section,
+    .kontak-section {
+        padding: 35px 0;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: auto;
+    }
+
+    .produk-highlight {
+        padding: 18px;
+        margin: 30px 0 25px;
+    }
+
+    .highlight-text h2 {
+        font-size: 20px;
+    }
+
+    .highlight-text p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .highlight-info h3 {
+        font-size: 22px;
+    }
+
+    .produk-content {
+        padding: 18px;
+    }
+
+    .produk-content h3 {
+        font-size: 20px;
+    }
+
+    .produk-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .produk-price {
+        font-size: 19px;
+    }
+
+    .produk-img {
+        height: 180px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .client-name {
+        font-size: 16px;
+    }
+
+    .stars {
+        font-size: 20px;
+    }
+
+    .footer-content {
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        padding: 18px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .gallery-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-img {
+        width: 200px;
+        height: 140px;
+    }
+
+    .slide-track {
+        width: calc(200px * 12);
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .stats h2 {
+        font-size: 24px;
+    }
+
+    .stats p {
+        font-size: 13px;
+    }
+
+    .custom-card {
+        padding: 15px !important;
     }
 }
 
