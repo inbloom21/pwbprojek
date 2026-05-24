@@ -531,15 +531,6 @@ position:relative;
     .custom-nav-links{
         padding:15px 0;
     }
-
-    .footer-content{
-        flex-direction:column;
-        gap:25px;
-    }
-
-    .footer-right{
-        text-align:left;
-    }
 }
 
 /* Kontak */
