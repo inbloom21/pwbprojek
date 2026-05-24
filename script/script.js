@@ -8,7 +8,7 @@ function kirimEmail() {
         return;
     }
 
-    const emailMalaka = 'ibraarifa21@gmail.com';
+    const emailMalaka = 'a_chom2000@yahoo.com';
     const subject = encodeURIComponent(`Email dari ${nama} (Website)`);
     const body = encodeURIComponent(`Nama: ${nama}\nEmail: ${email}\n\nPesan:\n${pesan}`);
 
